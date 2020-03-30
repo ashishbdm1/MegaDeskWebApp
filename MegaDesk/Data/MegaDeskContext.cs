@@ -1,6 +1,6 @@
-﻿using MegaDesk3.Models;
+﻿using MegaDesk.Models;
 using Microsoft.EntityFrameworkCore;
-namespace MegaDesk3.Data
+namespace MegaDesk.Data
 {
 	public class MegaDeskContext : DbContext
 	{

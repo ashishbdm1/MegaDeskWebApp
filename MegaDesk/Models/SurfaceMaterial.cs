@@ -1,4 +1,4 @@
-﻿namespace MegaDesk3.Models
+﻿namespace MegaDesk.Models
 {
 	public class SurfaceMaterial
 	{

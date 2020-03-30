@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MegaDesk3.Models;
+using MegaDesk.Models;
 using Microsoft.EntityFrameworkCore;
-using MegaDesk3.Data;
+using MegaDesk.Data;
 
 namespace MegaDesk3
 {

@@ -1,12 +1,13 @@
 ﻿@page
-@model MegaDesk3.Pages.DeskQuotes.DetailsModel
+@model MegaDesk.Pages.DeskQuotes.DeleteModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Delete";
 }
 
-<h1>Details</h1>
+<h1>Delete Quote</h1>
 
+<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>DeskQuote</h4>
     <hr />
@@ -65,8 +66,10 @@
             @Html.DisplayFor(model => model.DeskQuote.QuotePrice)
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.DeskQuote.DeskQuoteId">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    
+    <form method="post">
+        <input type="hidden" asp-for="DeskQuote.DeskQuoteId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
 </div>

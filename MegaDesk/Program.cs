@@ -1,4 +1,4 @@
-﻿using MegaDesk3.Data;
+﻿using MegaDesk.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MegaDesk3.Models
+namespace MegaDesk.Models
 {
     public enum RushOrderType
     {

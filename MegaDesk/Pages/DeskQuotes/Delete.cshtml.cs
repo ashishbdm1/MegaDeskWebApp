@@ -1,17 +1,17 @@
 ﻿using System.Linq;
-using MegaDesk3.Models;
+using MegaDesk.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace MegaDesk3.Pages.DeskQuotes
+namespace MegaDesk.Pages.DeskQuotes
 {
 	public class DeleteModel : PageModel
 	{
-		private readonly MegaDesk3.Data.MegaDeskContext _context;
+		private readonly MegaDesk.Data.MegaDeskContext _context;
 
-		public DeleteModel( MegaDesk3.Data.MegaDeskContext context )
+		public DeleteModel( MegaDesk.Data.MegaDeskContext context )
 		{
 			_context = context;
 		}

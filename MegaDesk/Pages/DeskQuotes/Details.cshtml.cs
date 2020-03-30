@@ -1,16 +1,16 @@
-﻿using MegaDesk3.Models;
+﻿using MegaDesk.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace MegaDesk3.Pages.DeskQuotes
+namespace MegaDesk.Pages.DeskQuotes
 {
 	public class DetailsModel : PageModel
 	{
-		private readonly MegaDesk3.Data.MegaDeskContext _context;
+		private readonly MegaDesk.Data.MegaDeskContext _context;
 
-		public DetailsModel( MegaDesk3.Data.MegaDeskContext context )
+		public DetailsModel( MegaDesk.Data.MegaDeskContext context )
 		{
 			_context = context;
 		}

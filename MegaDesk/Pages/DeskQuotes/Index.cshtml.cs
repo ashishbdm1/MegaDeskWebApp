@@ -1,5 +1,5 @@
 ﻿using System;
-using MegaDesk3.Models;
+using MegaDesk.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -7,13 +7,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MegaDesk3.Pages.DeskQuotes
+namespace MegaDesk.Pages.DeskQuotes
 {
 	public class IndexModel : PageModel
 	{
-		private readonly MegaDesk3.Data.MegaDeskContext _context;
+		private readonly MegaDesk.Data.MegaDeskContext _context;
 
-		public IndexModel( MegaDesk3.Data.MegaDeskContext context )
+		public IndexModel( MegaDesk.Data.MegaDeskContext context )
 		{
 			_context = context;
 		}
