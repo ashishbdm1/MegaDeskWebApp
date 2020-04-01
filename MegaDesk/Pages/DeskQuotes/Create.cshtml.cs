@@ -24,7 +24,7 @@ namespace MegaDesk.Pages.DeskQuotes
 
 		public async Task<IActionResult> OnGet()
 		{
-			SurfaceMaterials = new SelectList( await _context.SurfaceMaterials.Select( s => s.Name ).ToListAsync() );
+			SurfaceMaterials = new SelectList( await _context.SurfaceMaterials.Select( s => new { s.SurfaceMaterialId , s.Name}).ToListAsync(), "SurfaceMaterialId", "Name");
 
 			return Page();
 		}
